@@ -1,0 +1,46 @@
+/* For gradient background*/
+body {
+    background-image: linear-gradient(to bottom, seagreen, darkgreen);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Container*/
+.container {
+    width:70%;
+    max-width:800px;
+    margin:auto;
+}
+
+.container img{
+    width:100%;
+    border:2px solid white;
+}
+
+.container audio{
+    width:100%;
+}
+
+/*If screen is less than 800px it will make width 90%*/
+@media screen and (max-width: 799px) {
+    .container{
+        width:90%;
+    }
+}
+
+/*For fade in images*/
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+/*Fade in images time to fade in*/
+.fadeInUp-animation {
+    animation: 1.5s fadeInUp;
+}
